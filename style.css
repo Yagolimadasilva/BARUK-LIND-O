@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald');
-:root{
-   --background: #000;
-   --text: #fff;
-   --highlight: #ff1ead;
+
+:root {
+    --background: #000;
+    --text: #fff;
+    --highlight: #ff1ead;
 }
 
 body {
@@ -14,51 +15,53 @@ body {
     overflow: hidden;
     transition: 0.5s background ease;
 }
-.comtainer {
+
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
+
 .theme-switch {
-    --background: #fff;
+    --backgrund: #fff;
     --text: #000;
     color: var(--text);
     width: 70px;
     height: 30px;
-    background:var(--highlight);
+    background: var(--highlight);
     border-radius: 50px;
     position: relative;
 }
+
 .theme-switch .switch {
     background: white;
     width: 24px;
     height: 24px;
     background: var(--background);
-    border-radius: 100px;
+    border-radius: 100%;
     position: absolute;
-    top: 3px;
+    top: 2px;
     left: 4px;
     transition: 0.5s all ease;
 }
-.light-theme{
+
+.light-theme {
     --background: #fff;
-    --text:#000;
+    --text: #000;
     background: var(--background);
 } 
 
-.light-theme .theme-switch{
+.light-theme .theme-switch {
     background: var(--text);
 }
 
-.light-theme .theme-switch .switch{
+.light-theme .theme-switch .switch {
     transform: translateX(37px);
-
 }
 
-.light-theme a {
+.light-theme a{
     color: var(--text);
-
 }
 
 .navigation {
@@ -90,16 +93,15 @@ ul a:before {
     opacity: 0;
 }
 
-ul a:hover:before {
+al a:hover:before {
     opacity: 1;
-    transition: 0.5s; transition: ease
-    0.8s opacity ease;
+    transition: 0.5s transform ease, 0.8s opacity ease;
     transform: translateX(0);
 }
-
 ul .active {
     color: var(--highlight);
 }
+
 ul .active:hover:before {
-    opacity: 0;
+    opacity: 0; 
 }

@@ -1,5 +1,3 @@
 $(".theme-switch").on("click", () => {
-$("body").toggleclass
-("light-theme");
+    $("body").toggleClass("light-theme");
 });
-
